@@ -1,0 +1,197 @@
+//案件列表table样式
+.case-list {
+    .ant-table-wrapper {
+        overflow: auto;
+    }
+    .ant-spin-container {
+        min-width: 1260px;
+    } //定制公共组件表格样式
+    .ant-table-body {
+        .ant-table-thead>tr.ant-table-row-hover>td,
+        .ant-table-tbody>tr.ant-table-row-hover>td,
+        .ant-table-thead>tr:hover>td,
+        .ant-table-tbody>tr:hover>td {
+            background-color: #f0f1f5;
+        }
+        .ant-table-thead>tr.ant-table-row-hover>td,
+        .ant-table-tbody>tr.ant-table-row-active>td,
+        .ant-table-thead>tr:hover>td,
+        .ant-table-tbody>tr:active>td {
+            border-collapse: collapse;
+            background-color: #e2e9fd;
+        }
+        .ant-table-thead>tr>th,
+        .ant-table-tbody>tr>td {
+            font-size: 13px;
+            padding: 0 5px;
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+    .ant-table-header .ant-table-thead>tr>th {
+        padding: 10px 5px;
+        font-size: 14px;
+        background: #f0f1f5;
+    } //定制分页select样式
+    .ant-pagination {
+        //float: left;
+        display: inline-block;
+    }
+    .pagination-box {
+        .ant-select {
+            .ant-select-selection--single {
+                width: 80px;
+            }
+        }
+    }
+    .search-group {
+        .ant-select {
+            .ant-select-selection--single {
+                height: 30px;
+                border: 1px solid #afb0b3;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+.newcj {
+    .ant-select {
+        .ant-select-selection--single {
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+    }
+    .ant-calendar-picker {
+        .ant-input {
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+        }
+    }
+}
+
+.record-list,
+.repay-list,
+.contract-list {
+    .ant-table-wrapper {
+        overflow: auto;
+    }
+    .ant-spin-container {
+        min-width: 980px;
+    } //定制公共组件表格样式
+    .ant-table-body {
+        .ant-table-thead>tr.ant-table-row-hover>td,
+        .ant-table-tbody>tr.ant-table-row-hover>td,
+        .ant-table-thead>tr:hover>td,
+        .ant-table-tbody>tr:hover>td {
+            background-color: #f0f1f5;
+        }
+        .ant-table-thead>tr.ant-table-row-hover>td,
+        .ant-table-tbody>tr.ant-table-row-active>td,
+        .ant-table-thead>tr:hover>td,
+        .ant-table-tbody>tr:active>td {
+            border-collapse: collapse;
+            background-color: #e2e9fd;
+        }
+        .ant-table-thead>tr>th,
+        .ant-table-tbody>tr>td {
+            padding: 0 5px;
+            height: 33px;
+            line-height: 33px;
+        }
+    }
+    .ant-table-header .ant-table-thead>tr>th {
+        padding: 10px 5px;
+        background: #f0f1f5;
+    } //定制分页select样式
+    .ant-pagination {
+        //float: left;
+        display: inline-block;
+        .ant-pagination-item {
+            //background-color: transparent;
+        }
+    }
+    .pagination-box {
+        .ant-select {
+            .ant-select-selection--single {
+                width: 80px;
+                height: 22px;
+            }
+            .ant-select-selection__rendered {
+                line-height: 22px;
+            }
+        }
+    }
+    .ant-modal {
+        top: 30px;
+    }
+}
+
+.repay-list {
+    .ant-spin-container {
+        min-width: 789px;
+    }
+}
+
+.contract-list {
+    .ant-spin-container {
+        min-width: 840px;
+    }
+}
+
+// 弹框样式
+.ant-modal {
+    .ant-modal-header {
+        padding: 0;
+        background-color: #eceef1;
+        border-bottom: 1px solid #e5e5e5;
+        .ant-modal-title {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    .ant-modal-footer {
+        text-align: center;
+        border: none;
+    }
+    .ant-modal-close {
+        &:focus {
+            outline: none;
+        }
+    }
+    .ant-modal-close-x {
+        height: 41px;
+        line-height: 41px;
+    }
+}
+
+// 联系人
+.contract-list {
+    // 联系人——添加弹框样式
+    .ant-modal-body {
+        padding-bottom: 0;
+    }
+    .ant-modal-footer {
+        padding-bottom: 40px;
+    }
+    // 弹框中的select
+    .item-box {
+        .ant-select {
+            .ant-select-selection--single {
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid #afb0b3;
+                border-radius: 2px;
+            }
+            .ant-select-selection__rendered {
+                height: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+}

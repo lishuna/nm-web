@@ -1,0 +1,17 @@
+{
+    "error": {
+        "returnCode": 0,
+        "returnMessage": "ok",
+        "returnUserMessage": "ok"
+    },
+    "data": {
+        "loginToken": "ca92c1733e6af9db40f3244a7c040885d152d6c6c86f2571489f9e070b1848df",
+        "loginWay": 1,
+        "empId": "777103629492547584",
+        "UUID": "760945448851742385",
+        "roleLevel": 2,
+        "image": "",
+        "userName": "小仙女",
+        "roleName": "机构所有者"
+    }
+}

@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+
+// 引入jdb-plg-ui 公共样式
+@import "./app/jdb-plg-ui/core/scss/base";
+// @import "./assets/jdb-plg-fonts/jdb-plg-fonts";
+@font-face {
+    font-family: "iconfont";
+    src: url('../src/assets/jdb-plg-fonts/iconfont.eot?t=1507457345804');
+    /* IE9*/
+    src: url('../src/assets/jdb-plg-fonts/iconfont.eot?t=1507457345804#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    /* url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAVkAAsAAAAAB8wAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZW7kiYY21hcAAAAYAAAABeAAABhpvwBr5nbHlmAAAB4AAAAZgAAAG4pVlO12hlYWQAAAN4AAAALwAAADYPH3h/aGhlYQAAA6gAAAAcAAAAJAfeA4RobXR4AAADxAAAAAwAAAAMC+kAAGxvY2EAAAPQAAAACAAAAAgAdgDcbWF4cAAAA9gAAAAfAAAAIAESAF1uYW1lAAAD+AAAAUUAAAJtPlT+fXBvc3QAAAVAAAAAIQAAADJ2ht98eJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2Bk/sE4gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDgwVDxbx9zwv4EhhrmBoQEozAiSAwAwRg0aeJzFkMENgDAMAy9t6QMxCA8G4sUcnapjdY1iQnkwQS05VhxLiQIsQBQPMYFdGA9OueZ+ZHU/eSZLjUBptXf1nyqiWXYNKplpsHmr/9i87qPTVyiDOrHVl4QbEC0ORwAAeJwdTz1vE1EQ3N2Xe+cz9xG/s332+dvGPpDhopydYAlhR8g6CRRbkShILhV9TEER2xJFGqQUUeQ0lCkQEn8iBX8FwR+gpTjYsJrVaGZniwEN4O8PcSdK4MIj2IUpHAGg7GPbphq2gmFIfSy0tIKXt0XQCVp6px2KF+i1Zb4Y7Q97ntSlgzbWcdCK9oOQAtwbjuk5RsUaYrniv1HdqhIbzJaC+qf0NX3BQqNTdcZP01dPJvmo6WaWplJlpa4yUtMyRFuOjQuvaGhGVqZfNccv3DUeUwPNcuAfnljNinp3OXxf63oG4sUFupWm/W2S83OMj37RVWV928qUfKvzMI/LXw9Krlnr/QSeLe76XXwWB7ANIYxhAtDtcQ+vjt59mb0QA26is5Q6839vjM8YA16+uu0+MrHgDCd2hSNzloxiMpWJs1H6e7EROD9IpqMZskVxtHP+Msum2CwEUvbtB6LV6emK6Dz5o1s5PbqODcsy5rcjisXN2WzdrE5Ht/N7L76OdgbEj2c3Iu3L5XGyJlonyUoA/AN9Q0jyeJxjYGRgYABiSafTCvH8Nl8ZuFkYQOAag5Qjgv5/gIWB2QHI5WBgAokCANZjB2kAeJxjYGRgYG7438AQw8IAAkCSkQEVMAMARwkCbAQAAAAD6QAABAAAAAAAAAAAdgDceJxjYGRgYGBmCGRgZQABJiDmAkIGhv9gPgMAEPcBcAB4nGWPTU7DMBCFX/oHpBKqqGCH5AViASj9EatuWFRq911036ZOmyqJI8et1ANwHo7ACTgC3IA78EgnmzaWx9+8eWNPANzgBx6O3y33kT1cMjtyDRe4F65TfxBukF+Em2jjVbhF/U3YxzOmwm10YXmD17hi9oR3YQ8dfAjXcI1P4Tr1L+EG+Vu4iTv8CrfQ8erCPuZeV7iNRy/2x1YvnF6p5UHFockikzm/gple75KFrdLqnGtbxCZTg6BfSVOdaVvdU+zXQ+ciFVmTqgmrOkmMyq3Z6tAFG+fyUa8XiR6EJuVYY/62xgKOcQWFJQ6MMUIYZIjK6Og7VWb0r7FDwl57Vj3N53RbFNT/c4UBAvTPXFO6stJ5Ok+BPV8bUnV0K27LnpQ0kV7NSRKyQl7WtlRC6gE2ZVeOEXpc0Yk/KGdI/wAJWm7IAAAAeJxjYGKAAC4G7ICZkYmRmZGFgbGCpbQ4tYiBAQAOyAJYAAAA') format('woff'), */
+    url('../src/assets/jdb-plg-fonts/iconfont.ttf?t=1507457345804') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../src/assets/jdb-plg-fonts/iconfont.svg?t=1507457345804#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+@mixin background($left,
+$right) {
+    background-size: 432px 312px;
+    background-position:#{$left}px #{$right}px
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+@-ms-viewport {
+    width: auto !important;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+    content: "\e6ae";
+}
+
+.icon-lock:before {
+    content: "\e608";
+}
+
+.icon-cuowu:before {
+    content: "\e609";
+}
+
+.icon-guanbi2fill:before {
+    content: "\e724";
+}
+
+.btn {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 17px;
+    font-size: 14px;
+    border-radius: 2px;
+    i {
+        font-style: normal;
+    }
+}
+
+.btn.btn-save {
+    background: #3f69f2;
+    color: #fff;
+    outline: none;
+    border: none; // &:link {
+    //   background: @c_main_blue_n;
+    //   color: @c_white;
+    //   outline: none;
+    // }
+    &:hover {
+        background: #4d76ff;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
+    &:active {
+        background: #264199;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
+    &:focus {
+        border: none;
+        outline: none;
+    }
+    &[disabled] {
+        color: #fff;
+        outline: none;
+        opacity: .6;
+    }
+}
+
+button,
+input,
+textarea,
+select {
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+input,
+select {
+    height: 30px;
+}
+
+.form-control {
+    border-radius: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    &:focus {
+        border-color: #ccc;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+select.form-control {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.phone-send {
+    color: rgba(0, 0, 0, 0.65);
+    &:hover {
+        cursor: pointer;
+        color: #4d76ff;
+    }
+}
+
+.phone-btn {
+    background: url('/assets/images/icons.png') no-repeat;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    @include background(-50,
+    -172);
+    vertical-align: middle;
+    &:hover {
+        @include background(-75,
+        -170);
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "error": {
+        "returnCode": 0,
+        "returnMessage": "操作成功",
+        "returnUserMessage": "操作成功"
+    },
+    "data": {
+        "type": "webLogin",
+        "content": "8c476ab3bc2cf9b3d7efbf6124f4f9a9f1d1be0427d51df36e9780be1785eb92"
+    }
+}

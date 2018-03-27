@@ -1,0 +1,204 @@
+.login {
+    background-color: #edeef0;
+    background: url('/assets/images/login_bg.jpg') no-repeat top center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    .login-content{
+        // width: 430px;
+        // height: 281px;
+        width: 800px;
+        height: 500px;
+        background-color:rgba(255,255,255,.95);
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // top: 50%;
+        // left: 50%;
+        // margin-left: -215px;
+        // margin-top: -140px;
+        
+        .login-type{
+            display: inline-block;
+            width: 66px;
+            height: 66px;
+            background: url('/assets/images/login-pwd-icon.png') no-repeat;
+            
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .qr-login{
+            background: url('/assets/images/login-pwd-icon.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        .pwd-login{
+            background: url('/assets/images/login-qr-icon.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        .qrcode-box {
+           
+            .title {
+                font-family: MicrosoftYaHei;
+                font-size: 30px;
+                color: #3f69f2;
+                // height: 20px;
+                margin-top: 28px;
+            }
+            .qr-code-bg {
+                position: relative;
+                min-height: 150px;
+                margin: 20px 0;
+                .qrErrorMessage {
+                    position: absolute;
+                    top: -24px;
+                    width: 100%;
+                    text-align: center;
+                    color: red;
+                }
+                qr-code {
+                    justify-content: center;
+                    align-content: center;
+                }
+            }
+            .shade-content{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                text-align: center;
+            }
+            .qr-code-shade {
+                display: inline-block;
+                width: 320px;
+                height: 320px;
+                background-color:rgba(0, 0, 0, .5);
+                color: #fff;
+                p {
+                    margin-top: 120px;
+                    font-size: 14px;
+                }
+                button {
+                    margin-top: 30px;
+                    width: 80px;
+                    height: 40px;
+                    border:none;
+                    outline: none;
+                    background-color:#3f69f2;
+                }
+            }
+            .tips {
+                font-family: PingFang-SC-Regular;
+                font-size: 14px;
+                color: #323233;
+                line-height: 24px;
+            }
+        }
+        .pwd-box {
+            padding-top: 40px;
+            // .jdb-logo{
+            //     width: 48px;
+            // }
+            .title {
+                font-size: 30px;
+                font-weight: 300;
+                color: #323233;
+                padding-top: 32px;
+                font-family: 'Adobe 黑体 Std R';
+            }
+            .red-tip {
+                display: block;
+                height: 20px;
+                margin-top: 20px;
+                color: red;
+                line-height: 20px;
+                font-size: 14px;
+                i {
+                    vertical-align: middle;
+                }
+            }
+            .login-items {
+                margin: 0 auto;
+                width: 400px;
+                height: 44px;
+                .ant-input{
+                    border-radius: 0;
+                    
+                }
+                .iconfont {
+                    width: 50px;
+                    border-right: 1px solid #afb0b3;
+                }
+                .input-icon {
+                    position: relative;
+                    input{
+                        padding-left:66px;
+                    }
+                    .login-icon {
+                        position: absolute;
+                        top: 4px;
+                        left: 4px;
+                        font-size: 24px;
+                    }
+                    .login-clear {
+                        position: absolute;
+                        width: 18px;
+                        top: 8px;
+                        right: 8px;
+                        font-size: 18px;
+                        border: none;
+                    }
+                }
+                .login-group{
+                    margin-top: 20px;
+                    button,input{
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 0;
+                        outline: none;
+                        font-size: 16px;
+                    }
+                    input {
+                        height: 44px;
+                    }
+                    button {
+                        border:none;
+                        color:#fff;
+                        background-color:#3f69f2;
+                    }
+                }
+                .login-button{
+                    margin-top: 50px;
+                }
+                .btn-disabled {
+                    cursor: not-allowed;
+                }
+            }
+            .login-error{
+                input {
+                    border:1px solid red;
+                }
+            }
+        }
+        // @media (max-height: 640px) {
+        //     .login-content{
+        //         position: fixed;
+        //         top: 0;
+        //         margin-top: 0;
+        //     }
+        // }
+
+    }
+    @media (max-height: 500px) {
+        .login-content{
+            position: fixed;
+            top: 0;
+            margin-top: 0;
+        }
+    }
+    
+}

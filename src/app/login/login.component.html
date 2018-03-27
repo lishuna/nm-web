@@ -1,0 +1,51 @@
+<div class="login">
+    <div class="login-content">
+        <i class="login-type" [ngClass]="{'qr-login': loginType, 'pwd-login': !loginType }" (click)="changeLoginType()"></i>
+        <!-- <div *ngIf="loginType" class="qrcode-box">
+                <p class="title">登录借贷宝促信系统</p>
+                <div class='qr-code-bg'>
+                    <p *ngIf='codeRedStatus' class="qrErrorMessage">
+                        <i class="iconfont icon-cuowu"></i>
+                        {{codeRedMessage}}
+                    </p>
+                    <qr-code *ngIf='url' [size]="320" [value]="url"  ></qr-code>
+                    <div *ngIf='codeError' class="shade-content">
+                        <div class="qr-code-shade">
+                            <p>{{codeErrorMessage}}</p>
+                            <button (click)="refreshQrCode()">刷新</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="tips">请使用借贷宝APP扫描二维码，授权登录。</p>
+        </div> -->
+        <div class="pwd-box">
+            <img src="../../assets/images/jdb-logo.png" alt="" class="jdb-logo">
+            <div class="title">
+                登录借贷宝促信系统
+            </div>
+            <p class="red-tip">
+                <i *ngIf="loginStatus" class="iconfont icon-cuowu"></i> {{errorMessage}}
+            </p>
+            <div class="login-items" [class.login-error]="loginStatus">
+                <div class="login-group input-icon">
+                    <i class="iconfont icon-user login-icon"></i>
+                    <input type="text" [(ngModel)]="name" placeholder="用户名" (ngModelChange)="inputChange()">
+                    <i *ngIf="clearBtnName" class="iconfont icon-guanbi2fill login-clear" (click)='clearBtn("name")'></i>
+                </div>
+                <div class="login-group input-icon">
+                    <i class="iconfont icon-lock login-icon"></i>
+                    <input type="password" [(ngModel)]="password" placeholder="密码" (ngModelChange)="inputChange()">
+                    <i *ngIf="clearBtnPassword" class="iconfont icon-guanbi2fill login-clear" (click)='clearBtn("password")'></i>
+                </div>
+                <div class="login-group login-button" [class.btn-disabled]="entryButtonStatus">
+                    <button (click)="enter()" [disabled]="entryButtonStatus">
+                        <span>登录</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

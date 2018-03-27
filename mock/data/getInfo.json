@@ -1,0 +1,25 @@
+{
+    "error": {
+        "returnCode": "0",
+        "returnMessage": "ok",
+        "returnUserMessage": "ok"
+    },
+    "data": {
+        "nickName": "王小二",
+        "memberID":"10010",
+        "orgList":[
+            {
+                "orgUid":1,
+                "orgName":"小组1"
+            },
+            {
+                "orgUid":2,
+                "orgName":"小组2"
+            },
+            {
+                "orgUid":3,
+                "orgName":"小组3"
+            }
+        ]
+    }
+}
