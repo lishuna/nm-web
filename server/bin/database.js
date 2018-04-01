@@ -1,11 +1,11 @@
 var mongoose = require('mongoose');
-var db = mongoose.connect('mongodb://127.0.0.1:27017/Test');
-// db.connection.on('error', function(error){
-//   console.log('数据库test连接失败：' + error);
-// });
-// db.connection.on('open', function(){
-//   console.log('数据库test连接成功');
-// });
+var db = mongoose.connect('mongodb://lsn_r:lsn@127.0.0.1:27017/Test');
+db.connection.on('error', function(error){
+  console.log('数据库test连接失败：' + error);
+});
+db.connection.on('open', function(){
+  console.log('数据库test连接成功');
+});
 
 var sm = new mongoose.Schema({
     loginId: { type: String },
@@ -60,18 +60,18 @@ users.insertMany([{
 });
 
 /* ---------更新一条数据----------- */
-// users.update({loginId: '18501364356'},{
-//     $set: {
-//         age: '12'
-//     }
-// }, function (error, docs) {
-//     if (error) {
-//         console.log(error);
-//     } else {
-//         console.log('update ok');
-//         console.log(docs);
-//     }
-// });
+users.update({loginId: '18501364356'},{
+    $set: {
+        age: '12'
+    }
+}, function (error, docs) {
+    if (error) {
+        console.log(error);
+    } else {
+        console.log('update ok');
+        console.log(docs);
+    }
+});
 
 /* ---------查询所有----------- */
 // users.find({},'loginId passwd nickName age', function (error, docs) {
