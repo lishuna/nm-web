@@ -1,3 +1,6 @@
 [submodule "server1/nm"]
 	path = server1/nm
 	url = git@github.com:lishuna/nm.git
+[submodule "nm"]
+	path = nm
+	url = git@github.com:lishuna/nm.git
